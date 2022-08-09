@@ -1,0 +1,15 @@
+.navbar {
+  width: 296px;
+  min-height: 100vh !important;
+  .nav-link:hover {
+    background: darken($light, 10%);
+    color: #198754 !important;
+    border-left: 4px solid $success;
+    padding-left: 28px !important;
+  }
+  &-admin img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+}

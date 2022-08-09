@@ -1,0 +1,32 @@
+.admin {
+  margin-left: 296px;
+  .topbar-title {
+    margin-right: 50px !important;
+  }
+}
+.admin-table {
+  margin-bottom: 64px;
+  tbody th, tbody td {
+    padding: 16px 0 !important;
+  }
+  .icon-sort {
+    font-size: 18px !important;
+  }
+}
+
+.admin-pagination {
+  .page-link:hover {
+    color: $white !important;
+  }
+}
+.accordion-button::after {
+  color: $success !important;
+}
+.accordion-button:not(.collapsed) {
+  color: $dark;
+  background-color: $white;
+  box-shadow: none;
+}
+.btn-outline-danger {
+  border: 1px solid $danger !important;
+}
