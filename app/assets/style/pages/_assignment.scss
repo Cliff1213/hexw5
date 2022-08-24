@@ -29,6 +29,11 @@
     height: 40px;
     object-fit: cover;
   }
+  .card-list .reply-list li::before {
+    content: "•";
+    padding-right: 8px;
+    padding-left: 8px;
+  }
   .content-file:hover {
     background: $gray-400;
   }

@@ -128,11 +128,11 @@ engine: ejs
 
                     <div class="content-txt fs-sm">
                       <p class="mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a
-                        question: Why in the following code the height of the div is bigger than the height of the <span
-                          class="text-success bg-gray-100">img</span> ? There is a gap below the image, but it doesn’t
+                        question: Why in the following code the height of the div is bigger than the height of the <code
+                          class="text-success">img</code> ? There is a gap below the image, but it doesn’t
                         seems to be a padding/margin.<br>What is the gap or extra space below image?</p>
 
-                      <a class="content-file btn btn-light border border-gray-400 text-dark fw-bold py-2 px-3">
+                      <a href="#" class="content-file btn btn-light border border-gray-400 text-dark fw-bold py-2 px-3">
                         <div class="d-flex align-items-center">
                           <span class="material-symbols-outlined me-2">attach_file</span>HW-2-David.zip
                         </div>
@@ -147,11 +147,19 @@ engine: ejs
           </div>
 
           <div class="detail-card card rounded-0 rounded-bottom mb-4">
-            <div class="card-header py-4 px-6 border-0 border-bottom">
+            <div class="card-header py-4 px-4 border-0 border-bottom">
               <ul class="d-flex fw-bold">
                 <li class="d-flex align-items-center me-6">
-                  <p>Body Text</p>
-                  <span class="material-symbols-outlined">arrow_drop_down</span>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Body Text
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">think</a></li>
+                      <li><a class="dropdown-item" href="#">normal</a></li>
+                      <li><a class="dropdown-item" href="#">bold</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="d-flex align-items-center me-6">
                   <span class="material-symbols-outlined">format_bold</span>
@@ -177,13 +185,15 @@ engine: ejs
               </ul>
             </div>
 
-            <div class="card-body py-4 px-6">
+            <div class="card-body p-4">
 
-              <p class="card-textarea text-gray-400">Reply an answer…</p>
-
-              <div class="textarea-btn d-flex justify-content-end">
-                <a href="./index.html" class="btn btn-outline-success fw-bold py-2 px-8 me-2">Cancel</a>
-                <a href="javascript:;" class="btn btn-success fw-bold py-2 px-8">Reply</a>
+              <div class="form-floating">
+                <textarea class="form-control border-0 mb-2" placeholder="Leave a comment here" id="floatingTextarea" style="height: 204px; resize:none;"></textarea>
+                <label for="floatingTextarea" class="text-secondary">Reply an answer…</label>
+                <div class="textarea-btn d-flex justify-content-end">
+                  <a href="./index.html" class="btn btn-outline-success fw-bold py-2 px-8 me-2">Cancel</a>
+                  <a href="javascript:;" class="btn btn-success fw-bold py-2 px-8">Reply</a>
+                </div>
               </div>
             
             </div>

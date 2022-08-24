@@ -1,6 +1,13 @@
 .navbar {
   width: 296px;
   min-height: 100vh !important;
+  &-logo a {
+    width: 151px;
+    height: 40px;
+    background: url('./../images/logo-ANSWER.svg') no-repeat center;
+    background-size: contain;
+    @include textHide;
+  }
   .nav-link:hover {
     background: darken($light, 10%);
     color: #198754 !important;
